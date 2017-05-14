@@ -1,0 +1,230 @@
+﻿/*! Product by Wu Jun Xing */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td, span{ margin:0; padding:0;}
+body{font-family: Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size:13px; line-height:2; color:#666; background-color:White;}
+body{background-image:url(../img/bg.jpg); background-position:left top; background-repeat:repeat-x;}
+a{text-decoration:none; color:#6f6f6f;}
+a:hover{ color:#ff6f3d; }
+
+img {border:0;}
+table, img, hr, .mceItemAnchor {cursor:default}
+table td, table th {cursor:text}
+ins {border-bottom:1px solid green; text-decoration: none; color:green}
+del {color:red; text-decoration:line-through}
+cite {border-bottom:1px dashed blue}
+acronym {border-bottom:1px dotted #CCC; cursor:help}
+abbr {border-bottom:1px dashed #CCC; cursor:help}
+li {list-style: none outside none;}
+table {border-collapse: collapse;border-spacing:0;}
+
+.clear{ clear:both;}
+.wdiv{ width:1000px; margin:0px auto;}
+.wdiv10{ width:1000px; margin:10px auto;}
+.f_left{float:left;}
+.f_right{float:right;}
+.f_left20{float:left; margin-left:20px;}
+.f_left_2{float:left; margin-left:10px;}
+
+.page_head{
+    width:1000px; height:120px; margin:0 auto;
+}
+.page_head .logo{
+    float:left; height:100px; padding-top:10px;
+}
+.page_head .logo img{
+    height:100px;
+}
+.page_head .links{
+    float:right; border:1px solid #dedede; border-top:none; background-color:#fff; padding:0 10px;
+    border-radius:0px 0px 10px 12px;
+}
+.page_head .links a,.page_head .links span{
+    margin:0 2px; font-size:12px;
+}
+.page_head .links a{
+    color:#9a9a9a;
+}
+.page_head .links span{
+    color:#aaa;
+}
+
+.index_banner230{
+    width:1000px; height:230px; margin:0 auto;
+    box-shadow:0px 1px 5px 0px #4a4a4a;
+}
+.index_banner230 img{
+    width:1000px; height:230px;
+}
+
+.page_footer{
+    width:1000px; background-color:#2a2a2a; margin:0 auto; padding-bottom:20px; margin-top:30px;
+    background-image:url(../img/footer_bg.jpg);
+}
+
+.page_footer .footerLink{
+    width:167px; height:22px; line-height:22px; background:url(../img/footerlinks.png) no-repeat; float:left; margin-left:50px; margin-top:10px; position:relative; z-index:199; cursor:pointer;
+}
+.footerLink span{ padding-left:8px;}
+.footerLinkCon{ width:143px; padding:12px; background:#fff; border:1px solid #e7e7e7; border-radius:2px; position:absolute; bottom:22px; left:0; display:none; }
+.footerLinkCon a{ display:inline-block; width:143px; font:12px/18px "微软雅黑"; color:#336666; padding:3px 0 3px 10px; background:url(../img/list01.png) no-repeat left 10px; }
+.footerLinkCon a:hover{ color:#ff9900; background:url(../img/list01_on.png) no-repeat left 10px}
+
+.page_footer .copyright{
+    width:400px; height:40px; float:right; line-height:40px; color:#9a9a9a; margin-right:20px;
+}
+
+
+
+.bbs_nav{
+    width:1000px; margin:20px auto; padding:6px 0px; height:26px; border-bottom:1px solid #CCC;
+}
+.bbs_nav a,.bbs_nav span{
+    display:inline-block; height:26px; line-height:26px; color:#666; font-size:13px; margin-right:10px;
+}
+.bbs_nav a:hover,.bbs_nav .cur{
+    color:#ff9900;
+}
+.bbs_nav .index{
+    padding-left:20px; background-image:url(../img/icon_home.jpg); background-position:left center; background-repeat:no-repeat;
+}
+
+.paging{height:50px; padding-top:15px; line-height:50px; text-align:center; overflow:hidden;} 
+.paging a{padding:5px 10px; background:#f5f5f5; color:#6a6a6a; margin-right:5px; text-decoration:none;}
+.paging a:hover,.paging a.checka{background:#ff9900; color:#fff;}
+
+.bbs_title{
+    padding:2px; margin-top:20px;
+}
+.bbs_title b{
+    height:20px; line-height:20px; font-size:18px; color:#333;
+    border-left:4px solid #ff6f3d;
+    padding-left:10px;
+}
+.bbs_list{
+    margin-top:1px; border:1px solid #ffe8a3;
+}
+.bbs_list .head {
+    background-color:#ffe8a3; color:#7d0000;
+}
+.bbs_list .head .c_title{
+    text-align:center;
+    display:inline-block; width:610px; height:20px; overflow:hidden;
+}
+.bbs_list .head .c_arthur{
+    display:inline-block; width:110px; height:20px; overflow:hidden;
+}
+.bbs_list .head .c_read{
+    display:inline-block; width:110px; height:20px; overflow:hidden;
+}
+.bbs_list .head .c_date{
+    display:inline-block; width:110px; height:20px; overflow:hidden;
+}
+
+.bbs_list .list{
+
+}
+.bbs_list .list .item{
+    border-bottom:thin dashed #ffe8a3;
+}
+.bbs_list .list .cur{
+    background-color:#f1f2f6;
+}
+.bbs_list .list .c_title{
+    display:inline-block; width:600px; height:20px; padding:5px 20px; overflow:hidden;
+}
+.bbs_list .list .c_arthur{
+    display:inline-block; width:100px; height:20px; padding:5px; overflow:hidden;
+}
+.bbs_list .list .c_read{
+    display:inline-block; width:100px; height:20px; padding:5px; overflow:hidden;
+}
+.bbs_list .list .c_date{
+    display:inline-block; width:100px; height:20px; padding:5px; overflow:hidden;
+}
+
+.bbs01{
+    width:650px; padding:20px 38px; border:1px solid #e6e6e6;
+    margin-bottom:20px;
+}
+.bbs02{
+    width:260px; padding:10px 0; border:1px solid #e6e6e6;
+    margin-bottom:20px;
+}
+
+.btitle{
+    color:#ff8b3d; font-size:18px; text-align:center; line-height:36px; padding-bottom:10px;
+}
+.btxt{
+    border-bottom:1px solid #e6e6e6; color:#999;
+}
+.btxt span{
+    color:#333; margin-left:6px; margin-right:6px;
+}
+.bbscontent{
+    padding:20px 0px;
+}
+.bbscontent img{
+    max-width:650px;
+}
+.bbsmore{
+    border-top:1px solid #e6e6e6; color:#999; padding:10px 5px;
+}
+.bbsmore a{
+    color:#ff8b3d;
+}
+.bbs_apply{
+    text-align:center;
+}
+.bbs_apply a{
+    display:block;
+    width: 150px;
+    height: 38px;
+    line-height: 38px;
+    margin:0 auto;
+    text-align:center; background-color:#ff7519; color:#fff;
+}
+
+.bbs_reply{
+
+}
+.bbs_reply .head{
+    border-bottom:1px solid #e6e6e6;
+}
+.bbs_reply .head b{
+    color:#ff7519; font-size:18px;
+}
+.bbs_reply .item{
+    border-bottom:1px dashed #e6e6e6; padding:10px 0;
+}
+.bbs_reply_cover{
+    float:left; width:60px;
+}
+.bbs_reply_cover img{
+    width:50px; height:50px; border-radius:50px;
+}
+.bbs_reply_content{
+    float:right; width:550px;
+}
+.bbs_reply_content .name{
+    color:#ff7519;
+}
+.bbs_reply_content .message{
+
+}
+
+.lastest{
+    padding:20px;
+}
+.lastest h3{
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+}
+.lastest ul li{
+    height:30px; line-height:30px; overflow:hidden;
+}
+.lastest ul li a{
+    padding-left:10px; background-image:url(../img/list02.gif); background-position:left center; background-repeat:no-repeat;
+}
+.lastest ul li a:hover{
+    background-image:url(../img/list03.gif);
+}
