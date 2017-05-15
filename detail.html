@@ -8,6 +8,8 @@
 
     <link href="nivoslider/nivo-slider.css" rel="stylesheet" />
     <link href="nivoslider/themes/default/default.css" rel="stylesheet" />
+
+    <link href="utf8-net/themes/default/css/umeditor.min.css" rel="stylesheet" />
 </head>
 <body>
     <div class="page_head">
@@ -15,10 +17,12 @@
         <div class="clear"></div>
     </div>
 
-    <div class="index_banner230">
-        <img src="img/ad230.jpg" alt="" />
+    <div class="index_banner230 theme-default">
+        <div id="slider" class="nivoSlider">
+            <a href="javascript:void();" class="nivo-imageLink"><img src="img/ad230.jpg" alt="" title="" /></a>
+            <!--<a href="javascript:void();" class="nivo-imageLink"><img src="img/ad230_2.jpg" alt="" title="" /></a>-->
+        </div>
     </div>
-
 
     <div class="bbs_nav">
         <a class="index">企业论坛</a><span>&gt;</span><a href="#">经验分享</a><span>&gt;</span><span class="cur">文章正文</span>
@@ -38,11 +42,12 @@
                         <p style="LINE-HEIGHT: 2"><font size="3"><span style="LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; BACKGROUND: white; FONT-SIZE: 16px; mso-hansi-font-family: 微软雅黑">&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font style="FONT-FAMILY: 宋体; FONT-SIZE: 16px"><span style="LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; BACKGROUND: white; FONT-SIZE: 16px; mso-hansi-font-family: 微软雅黑" lang="EN-US">2017</span><span style="LINE-HEIGHT: 150%; FONT-FAMILY: 宋体; BACKGROUND: white; FONT-SIZE: 16px; mso-hansi-font-family: 微软雅黑">年<span style="FONT-FAMILY: 宋体; FONT-SIZE: 16px" lang="EN-US">5</span>月<span style="FONT-FAMILY: 宋体; FONT-SIZE: 16px" lang="EN-US">4</span>日，广东机施葵涌保障房项目部一众青年同志齐聚工地会议室，举行了“五四青年座谈会”。会上，青年同志们观看了关于五四青年节的由来、以及新时代青年的历时使命等主题纪录片，以助大家温故而知新，并旨在这特殊的日子里面，增强我们的民族意识及爱国精神。观看结束后，大家各抒己见，表达了自己的想法以及感慨，从日常的工作安排，自身素质培养，项目的管理运营，甚至于对我们国家在新时代发展下所取得的成就等等话题进行了交流讨论。同时对去年项目部按照集团团委要求设立的“青年安全生产示范岗”的创建、关爱农民工、四月学雷锋等各项青年活动一一进行了回顾和总结，展示了相关活动图片，各位青年同志发表了各自的看法和改善建议，并作好相关记录，为日后开展活动提供经验和借鉴。</span></font></p>
                         
                 </div>
+
                 <div class="bbsmore">
                     上一篇：<a href="#">发扬机施精神，建设在西藏</a><br/>
                     下一篇：<a href="#">公司董事长黄斌伟到揭阳棚户区改造项目检查指导工作</a>
                 </div>
-                <div class="bbs_apply"><a href="#">我要留言</a></div>
+                
             </div>
 
             <!--评论-->
@@ -52,33 +57,33 @@
                     <div class="head"><b>最新评论</b></div>
 
                     <div class="item">
-                        <div class="bbs_reply_cover">
+                        <div class="replylist_cover">
                             <img src="img/cover.jpg" />
                         </div>
-                        <div class="bbs_reply_content">
-                            <div><span class="name">某某某</span>发表于<span>2017-01-02</span></div>
+                        <div class="replylist_content">
+                            <div><span class="name">某某某</span><span class="date">发表于：2017-01-02</span></div>
                             <div class="message">支持！忆往昔峥嵘岁月，畅谈青春理想！</div>
                         </div>
                         <div class="clear"></div>
                     </div>
 
                     <div class="item">
-                        <div class="bbs_reply_cover">
+                        <div class="replylist_cover">
                             <img src="img/cover.jpg" />
                         </div>
-                        <div class="bbs_reply_content">
-                            <div><span class="name">某某某</span>发表于<span>2017-01-02</span></div>
+                        <div class="replylist_content">
+                            <div><span class="name">某某某</span><span class="date">发表于：2017-01-02</span></div>
                             <div class="message">支持！忆往昔峥嵘岁月，畅谈青春理想！</div>
                         </div>
                         <div class="clear"></div>
                     </div>
 
                     <div class="item">
-                        <div class="bbs_reply_cover">
+                        <div class="replylist_cover">
                             <img src="img/cover.jpg" />
                         </div>
-                        <div class="bbs_reply_content">
-                            <div><span class="name">某某某</span>发表于<span>2017-01-02</span></div>
+                        <div class="replylist_content">
+                            <div><span class="name">某某某</span><span class="date">发表于：2017-01-02</span></div>
                             <div class="message">支持！忆往昔峥嵘岁月，畅谈青春理想！</div>
                         </div>
                         <div class="clear"></div>
@@ -86,6 +91,20 @@
 
                 </div>
             </div>
+
+            <div class="bbs01">
+                <div>
+                    <div class="to_reply_cover">
+                        <img src="img/cover.jpg" />
+                    </div>
+                    <div class="to_reply_content">
+                        <textarea id="emcontainner"></textarea>
+                        <a href="#" class="reply_bt">回复</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
         </div>
 
         <div class="f_right">
@@ -126,9 +145,23 @@
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="nivoslider/jquery.nivo.slider.js"></script>
-    <script type="text/javascript" src="js/jquery.tinycarousel.js"></script>
     <script type="text/javascript" src="js/fun.js"></script>
 
-    <script type="text/javascript" src="js/index.js"></script>
+    <!-- 编辑器 -->
+    <script src="utf8-net/third-party/template.js"></script>
+    <script src="utf8-net/umeditor.config.js"></script>
+    <script src="utf8-net/umeditor.min.js"></script>
+    <script src="utf8-net/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            window.um = UM.getEditor('emcontainner', {
+                /* 传入配置参数,可配参数列表看umeditor.config.js */
+                toolbar: ['undo redo | bold italic underline'],
+                initialFrameWidth: 550,
+                initialFrameHeight: 100
+            });
+        });
+    </script>
+
 </body>
 </html>
