@@ -3,8 +3,8 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td, span{ margin:0; padding:0;}
 body{font-family: Arial,"Microsoft YaHei","微软雅黑","宋体"; font-size:13px; line-height:2; color:#666; background-color:White;}
 body{background-image:url(../img/bg.jpg); background-position:left top; background-repeat:repeat-x;}
-a{text-decoration:none; color:#ff9900;}
-a:hover{ }
+a{text-decoration:none; color:#666;}
+a:hover{ color:#ff9900; }
 
 img {border:0;}
 table, img, hr, .mceItemAnchor {cursor:default}
@@ -124,41 +124,48 @@ table {border-collapse: collapse;border-spacing:0;}
 .paging a:hover,.paging a.checka{background:#ff9900; color:#fff;}
 
 .bbs_title{
-    height:20px; border:1px solid #ddd; padding:6px; background-image:url(../img/bbstitle.jpg); background-repeat:repeat-x;
+    height:20px; border:1px solid #ddd; padding:6px; overflow:hidden;
+    background-image:url(../img/bbstitle.jpg); background-repeat:repeat-x;
 }
 .bbs_title b{
     height:20px; line-height:20px; font-size:16px; color:#333;
     border-left:4px solid #ff8b3d;
     padding-left:10px;
+    float:left;
+}
+.bbs_title a{
+    display:block; height:20px; line-height:20px; padding-right:10px; font-size:12px;
+    float:right;
 }
 .bbs_list{
-    border:1px solid #ddd; margin-bottom:20px;
+    border:1px solid #ddd; border-top:none; margin-bottom:20px;
 }
 .bbs_list .head {
-    background-color:#f3f3f3; color:#999;
+    color:#999; height:22px; line-height:22px; color:#333; font-size:12px;
+    background-color:#e8e8e8;
 }
 .bbs_list .head .c_title{
     text-align:center;
-    display:inline-block; width:640px; height:20px; overflow:hidden;
+    display:inline-block; width:640px;
 }
 .bbs_list .head .c_arthur{
-    display:inline-block; width:110px; height:20px; overflow:hidden;
+    display:inline-block; width:110px;
 }
 .bbs_list .head .c_read{
-    display:inline-block; width:110px; height:20px; overflow:hidden;
+    display:inline-block; width:110px;
 }
 .bbs_list .head .c_date{
-    display:inline-block; width:110px; height:20px; overflow:hidden;
+    display:inline-block; width:110px;
 }
 
 .bbs_list .list{
-    padding:6px;
+
 }
 .bbs_list .list .item{
-    border-bottom:thin dashed #ffe8a3;
+    border-bottom:1px solid #ffebcc;
 }
-.bbs_list .list .cur{
-    background-color:#f1f2f6;
+.bbs_list .list .split{
+    background-color:#fff5e6;
 }
 .bbs_list .list .c_title{
     display:inline-block; width:600px; height:20px; padding:5px 20px; overflow:hidden;
@@ -267,11 +274,14 @@ table {border-collapse: collapse;border-spacing:0;}
 .reply_bt{
     display:block;
     width: 150px;
-    height: 38px;
-    line-height: 38px;
+    height: 30px;
+    line-height: 30px;
     margin-top: 20px;
     background-color: #ff8b3d;
     border: 1px solid #ff8b3d;
     text-align:center;
+    color:#fff;
+}
+.reply_bt:hover{
     color:#fff;
 }

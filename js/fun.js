@@ -13,4 +13,6 @@
         $(this).children(".slist").hide()
     })
 
+    $(".bbs_list .item:odd").addClass("split");
+
 });
