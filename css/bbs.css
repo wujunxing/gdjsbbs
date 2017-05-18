@@ -25,6 +25,21 @@ table {border-collapse: collapse;border-spacing:0;}
 .f_left20{float:left; margin-left:20px;}
 .f_left_2{float:left; margin-left:10px;}
 
+#floatimg {
+    z-index:100; left:2px;  position:absolute; top:43px;
+}
+#floatimg img{
+    width:252px; height:172px; cursor:pointer;
+}
+#closead{
+    position:absolute; right:0px; bottom:0px; width:60px; height:20px; background-color:#CCC; color:red;
+    text-align:center; border:1px solid #999; line-height:20px; cursor:pointer;
+    /* for IE */
+    filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.6;
+}
+
 .page_head{
     width:1000px; height:120px; margin:0 auto;
 }
