@@ -25,13 +25,16 @@ table {border-collapse: collapse;border-spacing:0;}
 .f_left20{float:left; margin-left:20px;}
 .f_left_2{float:left; margin-left:10px;}
 
-#floatimg {
-    z-index:100; left:2px;  position:absolute; top:43px;
+.floatad {
+    z-index:100; position:fixed; right:0px; bottom:0px;
 }
-#floatimg img{
-    width:252px; height:172px; cursor:pointer;
+.floatad a{
+    display:block; width:100%; height:100%; line-height:0;
 }
-#closead{
+.floatad img{
+    display:block; width:100%; height:100%;
+}
+.closead{
     position:absolute; right:0px; bottom:0px; width:60px; height:20px; background-color:#CCC; color:red;
     text-align:center; border:1px solid #999; line-height:20px; cursor:pointer;
     /* for IE */
@@ -134,7 +137,7 @@ table {border-collapse: collapse;border-spacing:0;}
     vertical-align:middle;
 }
 
-.paging{height:50px; padding-top:15px; line-height:50px; text-align:center; overflow:hidden;} 
+.paging{height:50px; padding-top:15px; line-height:50px; text-align:left; overflow:hidden;} 
 .paging a{padding:5px 10px; background:#f5f5f5; color:#6a6a6a; margin-right:5px; text-decoration:none;}
 .paging a:hover,.paging a.checka{background:#ff9900; color:#fff;}
 
@@ -182,6 +185,9 @@ table {border-collapse: collapse;border-spacing:0;}
 .bbs_list .list .split{
     background-color:#fff5e6;
 }
+.bbs_list .list .last{
+    border-bottom:none;
+}
 .bbs_list .list .c_title{
     display:inline-block; width:600px; height:20px; padding:5px 20px; overflow:hidden;
 }
@@ -210,91 +216,22 @@ table {border-collapse: collapse;border-spacing:0;}
 }
 .bbs04{
     width:740px; padding:10px; border:1px solid #e6e6e6;
-    margin-bottom:20px; background-color:#f8f8f8;
+    margin-bottom:20px;
 }
 
-.btitle{
-    color:#ff8b3d; font-size:18px; text-align:center; line-height:36px; padding-bottom:10px;
-}
-.btxt{
-    border-bottom:1px solid #e6e6e6; color:#999;
-}
-.btxt span{
-    color:#333; margin-left:6px; margin-right:6px;
-}
-.bbscontent{
-    padding:20px 0px;
-}
-.bbscontent img{
-    max-width:650px;
-}
-.bbsmore{
-    border-top:1px solid #e6e6e6; color:#999; padding:10px 5px;
-}
-.bbsmore a{
-    color:#ff8b3d;
-}
 
-.bbs_reply{
 
-}
-.bbs_reply .head{
-    border-bottom:1px solid #e6e6e6;
-}
-.bbs_reply .head b{
-    color:#ff7519; font-size:18px;
-}
-.bbs_reply .item{
-    border-bottom:1px dashed #e6e6e6; padding:10px 0;
-}
-.replylist_cover{
-    float:left; width:60px;
-}
-.replylist_cover img{
-    width:50px; height:50px; border-radius:50px;
+.replylist_date{
+
 }
 .replylist_content{
-    float:right; width:550px;
-}
-.replylist_content .name{
-    color:#ff7519; margin-right:6px;
-}
-.replylist_content .date{
-    color:#999;
-}
-.replylist_content .message{
 
 }
 
-.lastest{
-    padding:20px;
-}
-.lastest h3{
-    border-bottom: 1px solid #e6e6e6;
-    margin-bottom: 20px;
-}
-.lastest ul li{
-    height:30px; line-height:30px; overflow:hidden;
-}
-.lastest ul li a{
-    padding-left:10px; background-image:url(../img/list02.gif); background-position:left center; background-repeat:no-repeat;
-}
-.lastest ul li a:hover{
-    background-image:url(../img/list03.gif);
-}
-
-.to_reply_cover{
-    float:left; width:60px;
-}
-.to_reply_cover img{
-    width:50px; height:50px; border-radius:50px;
-}
-.to_reply_content{
-    float:right; width:560px;
-}
 #emcontainner{
 
 }
+
 .reply_bt{
     display:block;
     width: 150px;
@@ -323,22 +260,20 @@ table {border-collapse: collapse;border-spacing:0;}
     border-left: 4px solid #ff8b3d;
     padding-left: 10px;
 }
-.newtable{
 
-}
-.newtable td{
-    padding:3px;
+.newtable{
+    padding:20px 0;
 }
 .newtable .title01{
     height: 14px;
     line-height: 14px;
     padding: 5px 0;
     vertical-align: bottom;
-    width: 500px;
+    width: 540px;
     border: 1px solid #d5dadf;
 }
 .newtable .type01{
-    width: 140px;
+    width: 130px;
     height: 26px;
     border: 1px solid #d5dadf;
     vertical-align: middle;
@@ -353,6 +288,9 @@ table {border-collapse: collapse;border-spacing:0;}
     background-color: #ff8b3d;
     border: 1px solid #ff8b3d;
     text-align:center;
+    color:#fff;
+}
+.newbt:hover{
     color:#fff;
 }
 .newbt_re{
@@ -380,32 +318,34 @@ table {border-collapse: collapse;border-spacing:0;}
 .aboutme .name{
     text-align:center; color:#ff8b3d; font-size:16px;
 }
+.aboutme .txt{
+    padding:3px 20px;
+}
 .aboutme .links{
-    padding:0 20px;
+    padding:3px 20px;
 }
 .aboutme .links .a1{
-    display:block;
-    width: 100px;
-    padding-left:10px;
+    display:inline-block;
+    width: 80px;
     height: 28px;
-    margin:10px auto;
     line-height: 28px;
     font-size: 12px;
     color:#fff;
+    text-align:center;
     background-color: #ff8b3d;
     border: 1px solid #ff8b3d;
 }
 .aboutme .links .a2{
-    display:block;
-    width: 100px;
-    padding-left:10px;
+    display:inline-block;
+    width: 80px;
     height: 28px;
-    margin:10px auto;
     line-height: 28px;
     font-size: 12px;
     color: #fff;
+    text-align:center;
     border-color: #4c8fe1;
     background-color: #4c8fe1;
+    margin-left:6px;
 }
 
 
@@ -429,4 +369,40 @@ table {border-collapse: collapse;border-spacing:0;}
 
 .myarticlelist .item .del{
     display:inline-block; width:60px; vertical-align:top;
+}
+
+.bbstable{
+    width:100%; border:1px solid #ccc;
+}
+.bbstable_left{
+    width:210px; vertical-align:top; background-color:#f8f8f8; border:1px solid #ccc;
+}
+.bbstable_right{
+    padding:19px; vertical-align:top; border:1px solid #ccc;
+}
+.bbstable_form{
+    padding:10px; vertical-align:top; border:1px solid #ccc;
+}
+
+
+.bbstitle{
+    color:#ff8b3d; font-size:18px; text-align:center; line-height:36px; padding-bottom:10px;
+}
+.bbstxt{
+    border-bottom:1px solid #e6e6e6; color:#999;
+}
+.bbstxt span{
+    color:#333; margin-right:16px;
+}
+.bbscontent{
+    padding:20px 0px;
+}
+.bbscontent img{
+    max-width:650px;
+}
+.bbsmore{
+    border-top:1px solid #e6e6e6; color:#999; padding:10px 5px;
+}
+.bbsmore a{
+    color:#ff8b3d;
 }

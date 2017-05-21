@@ -33,61 +33,45 @@
 
     <div class="wdiv">
 
-        <div class="f_left">
-            <div class="bbs03">
-                <div class="aboutme">
-                    <div class="cover">
-                        <a href="#" title="更换头像">
-                            <img src="img/cover.jpg" alt="" /><br />
-                        </a>
+        <div class="pagetitle01"><b>发布文章</b></div>
+
+        <table class="bbstable">
+            <tr>
+                <td class="bbstable_left">
+                    <div class="aboutme">
+                        <div class="cover">
+                            <a href="#" title="更换头像">
+                                <img src="img/cover.jpg" alt="" /><br />
+                            </a>
+                        </div>
+                        <div class="name">
+                            勤奋的员工
+                        </div>
+                        <div class="txt">
+                            部门：行政中心<br />
+                            积分：299<br />
+                            最后登录：2017-01-02
+                        </div>
+                        <div class="links">
+                            <a href="#" class="a1">帖子：<b>100</b></a><a href="#" class="a2">回复：<b>729</b></a>
+                        </div>
                     </div>
-                    <div class="name">
-                        勤奋的员工
+                </td>
+                <td class="bbstable_form">
+                    <div class="newtable">
+                        文章标题：<input type="text" value="" class="title01" /><select class="type01" id="Select1">
+                            <option>请选择板块</option>
+                            <option>时事论事</option>
+                            <option>经验分享</option>
+                            <option>生活悠闲</option>
+                        </select><br/><br/>
+                        <textarea id="emcontainner"></textarea>
+                        <a href="#" class="newbt">发布</a><a href="#" class="newbt_re">取消</a>
                     </div>
-                    <div class="links">
-                        <a href="#" class="a1">我的帖子：<b>100</b></a>
-                        <a href="#" class="a2">我的回复：<b>729</b></a>
-                    </div>
-                </div>
-            </div>            
-        </div>
+                </td>
+            </tr>
+        </table>
 
-        <div class="f_right">
-
-            <div class="pagetitle01"><b>发布文章</b></div>
-            
-            <div class="bbs04">
-
-                <table class="newtable">
-                    <tr>
-                        <td>标题：</td>
-                        <td>
-                            <input type="text" value="" class="title01" /><select class="type01" id="Select1">
-                                <option>请选择板块</option>
-                                <option>时事论事</option>
-                                <option>经验分享</option>
-                                <option>生活悠闲</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
-                            内容：
-                        </td>
-                        <td>
-                            <textarea id="emcontainner"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><a href="#" class="newbt">发布</a><a href="#" class="newbt_re">取消</a></td>
-                    </tr>
-                </table>
-                
-            </div>
-        </div>
-
-        <div class="clear"></div>
     </div>
 
     <div class="page_footer">
@@ -114,7 +98,7 @@
             window.um = UM.getEditor('emcontainner', {
                 /* 传入配置参数,可配参数列表看umeditor.config.js */
                 toolbar: ['undo redo | bold italic underline | fontfamily fontsize | forecolor backcolor | justifyleft justifycenter justifyright justifyjustify | link unlink | image'],
-                initialFrameWidth: 650,
+                initialFrameWidth: 750,
                 initialFrameHeight: 400,
                 imageUrl: '/imgUpload.aspx'     /*图片上传网址*/
             });
